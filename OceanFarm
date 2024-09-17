@@ -13,7 +13,7 @@ local function checkPlayerCount()
 		})
 		-- Optional: Spieler nach der Nachricht kicken
 		wait(3) -- Warte 5 Sekunden, bevor der Spieler gekickt wird (um Nachricht anzuzeigen)
-		Players.LocalPlayer:Kick("You must not be in a private server or in a server with less than 2 players, because the script cannot work. Assets required by the script are not available in private servers")
+		Players.LocalPlayer:Kick("You must not be in a private server or in a server with less than 4 players, because the script cannot work. Assets required by the script are not available in private servers")
 	else
 loadstring(game:HttpGet(('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'),true))()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScripter103/AdoptMe/refs/heads/main/OceanFarm", true))()
