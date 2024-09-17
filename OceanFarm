@@ -2,8 +2,12 @@ local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 
 local BannedPlayers = {
-	"davidt",
-	"sad"
+	"GNCGOOBER29",
+	"GNCGOOBER30",
+        "Schteevee",
+        "love00love_09",
+	"GNCGOOBER32",
+        "jpowe8033",
 }
 
 -- Funktion zum Überprüfen der Spieleranzahl und Anzeigen einer Nachricht
