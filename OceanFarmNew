@@ -23,7 +23,7 @@ local function checkPlayerCount()
 
 		else
 			local playerCount = #Players:GetPlayers() -- Anzahl der Spieler im Spiel
-			if playerCount <= 4 then
+			if playerCount <= 0 then
 				StarterGui:SetCore("ChatMakeSystemMessage", {
 					Text = "You must not be in a private server or in a server with less than 4 players, because the script cannot work. Assets required by the script are not available in private servers";
 					Color = Color3.fromRGB(255, 0, 0); -- Rote Farbe
