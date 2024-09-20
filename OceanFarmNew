@@ -4,7 +4,8 @@ local StarterGui = game:GetService("StarterGui")
 local BannedPlayers = {
 	"GNCGOOBER9",
 	"GNCGOOBER23",
-        "LOOOLUwUhm"
+        "LOOOLUwUhm",
+        "Harry_042816"
 }
 
 
