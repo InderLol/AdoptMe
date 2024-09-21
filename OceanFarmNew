@@ -29,16 +29,16 @@ local function checkPlayerCount()
 
 		else
 			local playerCount = #Players:GetPlayers() -- Anzahl der Spieler im Spiel
-			if playerCount <= 3 then
+			if playerCount <= 6 then
 				StarterGui:SetCore("ChatMakeSystemMessage", {
-					Text = "You must not be in a private server or in a server with less than 3 players, because the script cannot work. Assets required by the script are not available in private servers";
+					Text = "You must not be in a private server or in a server with less than 6 players, because the script cannot work. Assets required by the script are not available in private servers";
 					Color = Color3.fromRGB(255, 0, 0); -- Rote Farbe
 					Font = Enum.Font.SourceSansBold;
 					TextSize = 24;
 				})
 				-- Optional: Spieler nach der Nachricht kicken
 				wait(3) -- Warte 5 Sekunden, bevor der Spieler gekickt wird (um Nachricht anzuzeigen)
-				Players.LocalPlayer:Kick("You must not be in a private server or in a server with less than 3 players, because the script cannot work. Assets required by the script are not available in private servers")
+				Players.LocalPlayer:Kick("You must not be in a private server or in a server with less than 6 players, because the script cannot work. Assets required by the script are not available in private servers")
 			end
 		end
 	end
